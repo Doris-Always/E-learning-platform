@@ -16,7 +16,6 @@ export const getAllCourses = async () => {
     }
 };
 export const getCourseById = (id) => {
-    // Get the course from the Vuex store
     const course = store.getters.getCourseById(id);
     if (course) {
         return Promise.resolve(course); 

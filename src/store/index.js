@@ -10,6 +10,7 @@ export default createStore({
   },
   getters: {
     allCourses: (state) => state.courses,
+    getCourseById: (state) => (id) => state.courses.find(course => course.id === id),
     lastViewedCourse(state) {
       return state.lastViewedCourse; 
     },
