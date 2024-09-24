@@ -10,10 +10,19 @@ export default createStore({
   },
   getters: {
     allCourses: (state) => state.courses,
-    getCourseById: (state) => (id) => state.courses.find(course => course.id === id),
+    
+    // getCourseById: (state) => (id) => state.courses.find(course => course.id === id),
     lastViewedCourse(state) {
       return state.lastViewedCourse; 
     },
+
+    getCourseById: (state) => (id) => {
+      const course = state.courses.find(course => course.id === id);
+      console.log("Looking for course ID:", id); // Check the ID being searched
+      console.log("Course found:", course); // See if the course exists
+      return course;
+    }
+    
   },
   mutations: {
     setLastViewedCourse(state, courseId) {

@@ -73,15 +73,6 @@
       console.error('Error fetching course details:', error);
     }
   },
-//   watch: {
-//   $route(to) {
-//     if (to.name === 'CourseDetailView') {
-//       this.activeItem = 'Dashboard'; // Set active to course detail
-//     } else if (to.name === 'home') {
-//       this.activeItem = 'Menu'; // Set active to home
-//     }
-//   }
-// }
   }
 
 </script>
