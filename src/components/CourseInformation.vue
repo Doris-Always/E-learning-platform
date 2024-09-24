@@ -3,9 +3,10 @@
     <div class="mx-8 pt-4">
       <h3 class="mb-4">About the Course</h3>
       <div class="flex course-instructor-detail mb-8">
-        <div class="course-instructor-image mr-4">
-          <img :src="course.instructor.profilePicture" alt="" />
-        </div>
+        
+        <div class="course-instructor-image border-2 mr-4"
+      :style="{ backgroundImage: `url(${course.instructor.profilePicture})` }"
+        ></div>
         <div class="expertise-and-name">
           <h4 class="mb-2">{{ course.instructor.name }}</h4>
           <h5 class="text-expertise">{{ course.instructor.expertise }}</h5>
@@ -89,7 +90,9 @@ export default {
   height: 50px;
   border-radius: 50%;
   padding: 5px;
-  border: 1px solid red;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* border: 1px solid red; */
 }
 .course-item {
   display: flex;

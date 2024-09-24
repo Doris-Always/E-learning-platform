@@ -9,7 +9,7 @@
         "instructor": {
           "name": "John Doe",
           "expertise": "Frontend Development",
-          "profilePicture": "https://example.com/instructor1.jpg",
+          "profilePicture": "https://media.istockphoto.com/id/1795068462/photo/cheerful-handsome-young-arab-entrepreneur-guy-posing-indoors.jpg?s=2048x2048&w=is&k=20&c=QCC_tG_uyBBkcjkM1mrtnwzRjbsyLDTK9uX8LjF742I=",
           "summary": "John has over 10 years of experience in frontend development and has taught over 50,000 students."
         },
         "about": "There was something beautiful in his hate. It wasn't the hate itself as it was a disgusting display of racism and intolerance. It was what propelled the hate and the fact that although he had this hate",
@@ -36,7 +36,7 @@
         "instructor": {
           "name": "Jane Smith",
           "expertise": "JavaScript Expert",
-          "profilePicture": "https://example.com/instructor2.jpg",
+          "profilePicture": "https://media.istockphoto.com/id/1795068462/photo/cheerful-handsome-young-arab-entrepreneur-guy-posing-indoors.jpg?s=2048x2048&w=is&k=20&c=QCC_tG_uyBBkcjkM1mrtnwzRjbsyLDTK9uX8LjF742I=",
           "summary": "Jane has been working with JavaScript for over 15 years and is passionate about teaching complex concepts in an easy-to-understand way."
         },
         "about": "There was something beautiful in his hate. It wasn't the hate itself as it was a disgusting display of racism and intolerance. It was what propelled the hate and the fact that although he had this hate",
@@ -63,7 +63,7 @@
         "instructor": {
           "name": "Emma Johnson",
           "expertise": "Mobile App Development",
-          "profilePicture": "https://example.com/instructor3.jpg",
+          "profilePicture": "https://media.istockphoto.com/id/1795068462/photo/cheerful-handsome-young-arab-entrepreneur-guy-posing-indoors.jpg?s=2048x2048&w=is&k=20&c=QCC_tG_uyBBkcjkM1mrtnwzRjbsyLDTK9uX8LjF742I=",
           "summary": "Emma is a mobile app expert with 7 years of experience building apps for both iOS and Android."
         },
         "about": "There was something beautiful in his hate. It wasn't the hate itself as it was a disgusting display of racism and intolerance. It was what propelled the hate and the fact that although he had this hate",
@@ -90,7 +90,7 @@
         "instructor": {
           "name": "Michael Brown",
           "expertise": "Data Science and Machine Learning",
-          "profilePicture": "https://example.com/instructor4.jpg",
+          "profilePicture": "https://media.istockphoto.com/id/1795068462/photo/cheerful-handsome-young-arab-entrepreneur-guy-posing-indoors.jpg?s=2048x2048&w=is&k=20&c=QCC_tG_uyBBkcjkM1mrtnwzRjbsyLDTK9uX8LjF742I=",
           "summary": "Michael has over 12 years of experience in data science, working with top companies globally."
         },
         "about": "There was something beautiful in his hate. It wasn't the hate itself as it was a disgusting display of racism and intolerance. It was what propelled the hate and the fact that although he had this hate.",
@@ -117,7 +117,7 @@
         "instructor": {
           "name": "Sophia Williams",
           "expertise": "Full Stack Development",
-          "profilePicture": "https://images.unsplash.com/photo-1499673610122-01c7122c5dcb?q=80&w=1927&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "profilePicture": "https://media.istockphoto.com/id/1795068462/photo/cheerful-handsome-young-arab-entrepreneur-guy-posing-indoors.jpg?s=2048x2048&w=is&k=20&c=QCC_tG_uyBBkcjkM1mrtnwzRjbsyLDTK9uX8LjF742I=",
           "summary": "Sophia is a full-stack developer with over 8 years of experience in building scalable web applications."
         },
         "about": "There was something beautiful in his hate. It wasn't the hate itself as it was a disgusting display of racism and intolerance. It was what propelled the hate and the fact that although he had this hate, he didn't understand where it came from. It was at that moment that she realized that there was hope in changing him.",
@@ -144,7 +144,7 @@
         "instructor": {
           "name": "Olivia Davis",
           "expertise": "UI/UX Design",
-          "profilePicture": "https://example.com/instructor6.jpg",
+          "profilePicture": "https://media.istockphoto.com/id/1795068462/photo/cheerful-handsome-young-arab-entrepreneur-guy-posing-indoors.jpg?s=2048x2048&w=is&k=20&c=QCC_tG_uyBBkcjkM1mrtnwzRjbsyLDTK9uX8LjF742I=",
           "summary": "Olivia is a seasoned UI/UX designer with experience working with Fortune 500 companies."
         },
         "about": "There was something beautiful in his hate. It wasn't the hate itself as it was a disgusting display of racism and intolerance. It was what propelled the hate and the fact that although he had this hate",
@@ -171,7 +171,7 @@
         "instructor": {
           "name": "Daniel Wilson",
           "expertise": "Cybersecurity",
-          "profilePicture": "https://example.com/instructor7.jpg",
+          "profilePicture": "https://media.istockphoto.com/id/1795068462/photo/cheerful-handsome-young-arab-entrepreneur-guy-posing-indoors.jpg?s=2048x2048&w=is&k=20&c=QCC_tG_uyBBkcjkM1mrtnwzRjbsyLDTK9uX8LjF742I=",
           "summary": "Daniel has over 15 years of experience in cybersecurity, helping companies secure their systems."
         },
         "coursePicture": "https://plus.unsplash.com/premium_photo-1663013231623-d266b26fcd9e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -197,7 +197,7 @@
         "instructor": {
           "name": "Daniel Wilson",
           "expertise": "Buisness Management",
-          "profilePicture": "https://example.com/instructor7.jpg",
+          "profilePicture": "https://media.istockphoto.com/id/1795068462/photo/cheerful-handsome-young-arab-entrepreneur-guy-posing-indoors.jpg?s=2048x2048&w=is&k=20&c=QCC_tG_uyBBkcjkM1mrtnwzRjbsyLDTK9uX8LjF742I=",
           "summary": "Daniel has over 15 years of experience in cybersecurity, helping companies secure their systems."
         },
         "about": "There was something beautiful in his hate. It wasn't the hate itself as it was a disgusting display of racism and intolerance. It was what propelled the hate and the fact that although he had this hate",

@@ -39,8 +39,6 @@
       return this.allCourses.find(course => course.id === this.id); 
     },
     currentView() {
-      // Determine the current view based on the state or user selection
-      // For now, default to CourseDetail for this specific component
       return 'CourseDetail';
     },
   },
