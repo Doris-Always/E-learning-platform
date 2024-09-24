@@ -1,87 +1,106 @@
+
 <template>
   <v-container fluid>
-    <v-row >
-      <!-- Sidebar (SideNav) -->
-      <!-- <v-col cols="" class="sidenav"> -->
-        <div class="sidenav">
-          <SideNav />
-        </div>
+    <v-row>
+   
+      <div class="sidenav" cols="1">
+        <SideNav ref="sideNav" @select="updateView" @update-active-item="setActiveItem" /> 
+        <!-- <SideNav @select="updateView"/>  -->
+      </div>
        
-      <!-- </v-col> -->
-
-      <!-- Main Content (Course Detail) -->
-      <v-col cols="8" class="main-content" >
-        <CourseDetail :course="course" />
-      </v-col>
-
-      <!-- Right Panel (Course Information) -->
-      <v-col cols="3" class="right-panel">
-        <CourseInformation :course="course" />
+      <v-col cols="11" :is="currentView">
+        <v-row>
+          <v-col
+          v-for="course in allCourses" 
+            :key="course.id"
+            cols="12" sm="6" md="3"
+          >
+            <CourseCard :course="course" @navigate="goToCourse"  @update-active-item="setActiveItem" />
+          </v-col>
+        </v-row>
       </v-col>
     </v-row>
   </v-container>
 </template>
 
+
 <script>
-import SideNav from '@/components/SideNav.vue';
-import CourseDetail from '@/components/CourseDetail.vue';
-import CourseInformation from '@/components/CourseInformation.vue';
+import SideNav from "@/components/SideNav.vue";
+import CourseCard from "@/components/CourseCard.vue";
+// import { getAllCourses } from "@/services/courses";
+import { getCourseById } from "@/services/courses";
+import { mapGetters } from 'vuex';
 
 export default {
-  name: 'HomeView',
+  name: "HomeView",
   components: {
     SideNav,
-    CourseDetail,
-    CourseInformation,
+    CourseCard,
+  },
+  computed: {
+    ...mapGetters(['allCourses']),
   },
   data() {
     return {
-      course: {
-        id: 1,
-        title: "Dummy Project Management Processes",
-        instructor: "Prof. Dummy Breaker",
-        image: "https://via.placeholder.com/640x360",
-        description: "This is a dummy description for project management processes.",
-        about: "This is a dummy about section.theis professoradd a very beauoti nand all options ",
-        modules: [
-          { name: "Introduction to Project Management", completed: true },
-          { name: "Basic Concepts of Project Management", completed: false },
-          { name: "Terminologies in Project Management", completed: false },
-          { name: "Project Life Cycle", completed: false },
-          { name: "Project Management Processes", completed: false }
-        ]
-      }
+      courses: [],
+      currentView: 'defaultView',
+     
     };
+  },
+  methods: {
+    goToCourse(courseId) {
+      this.$store.commit('setLastViewedCourse', courseId);
+      this.$router.push({ name: "CourseDetailView", params: { id: courseId } });
+      
+    },
+    setActiveItem(itemName) {
+      this.$refs.sideNav.setActiveItem(itemName); // Call setActiveItem on SideNav
+    },
+
+    updateView(view) {
+      console.log("updated")
+      this.currentView = view; 
+    }
+  },
+ 
+   
+  async mounted() {
+  if (this.allCourses.length === 0) {
+    await this.$store.dispatch('fetchCourses');
   }
+
+  const courseId = this.$route.params.id;
+  if (this.course) {
+    return;
+  }
+
+  try {
+    this.course = await getCourseById(courseId);
+  } catch (error) {
+    console.error('Error fetching course details:', error);
+  }
+},
+
+  // mounted() {
+  //   this.$store.dispatch('fetchCourses').then(() => {
+  //   console.log("Courses in store:", this.allCourses); 
+  // });
+   
+  // },
+  watch: {
+    allCourses(newCourses) {
+      console.log("Courses updated:", newCourses); 
+    },
+  },
+  // mounted() {
+  //   this.getAllCourses();
+  // },
 };
 </script>
 
 <style scoped>
-.v-container {
-  margin: 20px;
-  border: 1px solid gray;
-  background-color: white;
-}
-
-.sidenav, .main-content, .right-panel {
-  /* border: 1px solid transparent; */
-}
-
-.sidenav {
-  /* background-color: #f5f5f5; */
-  /* height: 100vh; */
-  /* border:1px solid red; */
-  margin: 0;
-  border-right: 2px solid rgb(219, 213, 213);
-}
-
-.main-content {
-  padding: 50px;
-  border-right: 2px solid rgb(219, 213, 213);
-}
-
-.right-panel {
-  padding: 20px;
-  /* background-color: #f9f9f9; */
-}
+ .sidenav {
+    margin: 0;
+    border-right: 2px solid rgb(219, 213, 213);
+  }
 </style>

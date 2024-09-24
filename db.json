@@ -1,0 +1,220 @@
+{
+    "courses": [
+      {
+        "id": 1,
+        "name": "Introduction to Vue.js",
+        "category": "Web Development",
+        "rating": 4.5,
+        "description": "Learn the basics of Vue.js and how to create dynamic web applications.",
+        "instructor": {
+          "name": "John Doe",
+          "expertise": "Frontend Development",
+          "profilePicture": "https://example.com/instructor1.jpg",
+          "summary": "John has over 10 years of experience in frontend development and has taught over 50,000 students."
+        },
+        "about": "There was something beautiful in his hate. It wasn't the hate itself as it was a disgusting display of racism and intolerance. It was what propelled the hate and the fact that although he had this hate",
+        "coursePicture": "https://images.unsplash.com/photo-1588912914074-b93851ff14b8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "listOfModules": [
+          { "name": "Introduction to Vue", "completed": false },
+          { "name": "Vue Basics", "completed": false },
+          { "name": "Components and Props", "completed": false },
+          { "name": "State Management with Vuex", "completed": false }
+        ],
+        "listOfReviews": [
+          { "user": "Alice", "comment": "Great course!", "rating": 5 },
+          { "user": "Bob", "comment": "Very informative.", "rating": 4 }
+        ],
+        "discussion": "Feel free to ask any questions related to the course.",
+        "resources": ["Vue.js official documentation", "Example projects"]
+      },
+      {
+        "id": 2,
+        "name": "Advanced JavaScript",
+        "category": "Programming",
+        "rating": 4.8,
+        "description": "Deep dive into JavaScript, covering topics like closures, async/await, and more.",
+        "instructor": {
+          "name": "Jane Smith",
+          "expertise": "JavaScript Expert",
+          "profilePicture": "https://example.com/instructor2.jpg",
+          "summary": "Jane has been working with JavaScript for over 15 years and is passionate about teaching complex concepts in an easy-to-understand way."
+        },
+        "about": "There was something beautiful in his hate. It wasn't the hate itself as it was a disgusting display of racism and intolerance. It was what propelled the hate and the fact that although he had this hate",
+        "coursePicture": "https://media.istockphoto.com/id/1209839321/photo/3d-rendering-of-advertising-banner-for-javascript-computer-course-e-learning-concept-of.jpg?s=2048x2048&w=is&k=20&c=4dAtGRChKyXBvQTCjpfHeAp5Lv6vH_zFoMzTjALixnM=",
+        "listOfModules": [
+          { "name": "Understanding Closures", "completed": false },
+          { "name": "Async/Await and Promises", "completed": true },
+          { "name": "JavaScript Design Patterns", "completed": false },
+          { "name": "Testing JavaScript Code", "completed": false }
+        ],
+        "listOfReviews": [
+          { "user": "Charlie", "comment": "A must for JavaScript developers.", "rating": 5 },
+          { "user": "Dave", "comment": "Loved the practical examples.", "rating": 4.5 }
+        ],
+        "discussion": "Let’s discuss advanced JS techniques!",
+        "resources": ["MDN JavaScript Guide", "Eloquent JavaScript"]
+      },
+      {
+        "id": 3,
+        "name": "React Native for Beginners",
+        "category": "Mobile Development",
+        "rating": 4.3,
+        "description": "Build your first mobile app using React Native and JavaScript.",
+        "instructor": {
+          "name": "Emma Johnson",
+          "expertise": "Mobile App Development",
+          "profilePicture": "https://example.com/instructor3.jpg",
+          "summary": "Emma is a mobile app expert with 7 years of experience building apps for both iOS and Android."
+        },
+        "about": "There was something beautiful in his hate. It wasn't the hate itself as it was a disgusting display of racism and intolerance. It was what propelled the hate and the fact that although he had this hate",
+        "coursePicture": "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "listOfModules": [
+          { "name": "Introduction to React Native", "completed": true },
+          { "name": "Setting Up the Development Environment", "completed": true },
+          { "name": "Building UI with Components", "completed": true },
+          { "name": "Using React Navigation", "completed": false }
+        ],
+        "listOfReviews": [
+          { "user": "Sarah", "comment": "Really helpful for beginners!", "rating": 4.5 },
+          { "user": "John", "comment": "Clear and easy to follow.", "rating": 4 }
+        ],
+        "discussion": "Ask about mobile development challenges here!",
+        "resources": ["React Native Docs", "Expo Documentation"]
+      },
+      {
+        "id": 4,
+        "name": "Python for Data Science",
+        "category": "Data Science",
+        "rating": 4.9,
+        "description": "Master Python and apply it to Data Science, including libraries like Pandas and NumPy.",
+        "instructor": {
+          "name": "Michael Brown",
+          "expertise": "Data Science and Machine Learning",
+          "profilePicture": "https://example.com/instructor4.jpg",
+          "summary": "Michael has over 12 years of experience in data science, working with top companies globally."
+        },
+        "about": "There was something beautiful in his hate. It wasn't the hate itself as it was a disgusting display of racism and intolerance. It was what propelled the hate and the fact that although he had this hate.",
+        "coursePicture": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fG9ubGluZSUyMGNvZGluZyUyMGNvdXJzZXN8ZW58MHx8MHx8fDA%3D",
+        "listOfModules": [
+          { "name": "Python Basics for Data Science", "completed": true },
+          { "name": "Working with Pandas and NumPy", "completed": true },
+          { "name": "Data Visualization with Matplotlib", "completed": false },
+          { "name": "Intro to Machine Learning", "completed": false }
+        ],
+        "listOfReviews": [
+          { "user": "Anna", "comment": "The best Python course out there!", "rating": 5 },
+          { "user": "Tom", "comment": "Very practical and hands-on.", "rating": 4.8 }
+        ],
+        "discussion": "Discuss Python for Data Science!",
+        "resources": ["Pandas Documentation", "Kaggle Datasets"]
+      },
+      {
+        "id": 5,
+        "name": "Full Stack Development with MERN",
+        "category": "Web Development",
+        "rating": 4.7,
+        "description": "Learn full-stack development using MongoDB, Express, React, and Node.js.",
+        "instructor": {
+          "name": "Sophia Williams",
+          "expertise": "Full Stack Development",
+          "profilePicture": "https://images.unsplash.com/photo-1499673610122-01c7122c5dcb?q=80&w=1927&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "summary": "Sophia is a full-stack developer with over 8 years of experience in building scalable web applications."
+        },
+        "about": "There was something beautiful in his hate. It wasn't the hate itself as it was a disgusting display of racism and intolerance. It was what propelled the hate and the fact that although he had this hate, he didn't understand where it came from. It was at that moment that she realized that there was hope in changing him.",
+        "coursePicture": "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "listOfModules": [
+          { "name": "Introduction to Full Stack", "completed": false },
+          { "name": "MongoDB and Express Basics", "completed": true },
+          { "name": "Frontend with React", "completed": false },
+          { "name": "Backend with Node.js", "completed": false }
+        ],
+        "listOfReviews": [
+          { "user": "James", "comment": "Perfect for aspiring full-stack developers.", "rating": 4.7 },
+          { "user": "Linda", "comment": "Comprehensive and up-to-date.", "rating": 4.6 }
+        ],
+        "discussion": "Share your full-stack journey here.",
+        "resources": ["MongoDB Documentation", "React Docs"]
+      },
+      {
+        "id": 6,
+        "name": "UI/UX Design for Beginners",
+        "category": "Design",
+        "rating": 4.4,
+        "description": "Understand the principles of UI/UX design and create user-friendly interfaces.",
+        "instructor": {
+          "name": "Olivia Davis",
+          "expertise": "UI/UX Design",
+          "profilePicture": "https://example.com/instructor6.jpg",
+          "summary": "Olivia is a seasoned UI/UX designer with experience working with Fortune 500 companies."
+        },
+        "about": "There was something beautiful in his hate. It wasn't the hate itself as it was a disgusting display of racism and intolerance. It was what propelled the hate and the fact that although he had this hate",
+        "coursePicture": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "listOfModules": [
+          { "name": "Introduction to UI/UX", "completed": true },
+          { "name": "Designing Wireframes", "completed": false },
+          { "name": "Creating Prototypes", "completed": false },
+          { "name": "Usability Testing", "completed": false }
+        ],
+        "listOfReviews": [
+          { "user": "Henry", "comment": "Great for beginners in design.", "rating": 4.4 },
+          { "user": "Grace", "comment": "Loved the interactive projects.", "rating": 4.2 }
+        ],
+        "discussion": "Talk about design principles here.",
+        "resources": ["Figma Tutorials", "InVision Resources"]
+      },
+      {
+        "id": 7,
+        "name": "Cybersecurity Essentials",
+        "category": "IT & Security",
+        "rating": 4.6,
+        "description": "Learn the basics of cybersecurity and how to protect systems and data.",
+        "instructor": {
+          "name": "Daniel Wilson",
+          "expertise": "Cybersecurity",
+          "profilePicture": "https://example.com/instructor7.jpg",
+          "summary": "Daniel has over 15 years of experience in cybersecurity, helping companies secure their systems."
+        },
+        "coursePicture": "https://plus.unsplash.com/premium_photo-1663013231623-d266b26fcd9e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "listOfModules": [
+          { "name": "Introduction to Cybersecurity", "completed": true },
+          { "name": "Network Security", "completed": false },
+          { "name": "Cryptography Basics", "completed": false },
+          { "name": "Incident Response", "completed": false }
+        ],
+        "listOfReviews": [
+          { "user": "Emily", "comment": "Very informative and detailed.", "rating": 4.7 },
+          { "user": "Jack", "comment": "Perfect for IT professionals.", "rating": 4.5 }
+        ],
+        "discussion": "Discuss cybersecurity trends here.",
+        "resources": ["Cybersecurity Best Practices", "OWASP Top 10"]
+      },
+      {
+        "id": 8,
+        "name": "Project Management Processes",
+        "category": "Management",
+        "rating": 4.6,
+        "description": "Learn the basics of project management for buisnesses.",
+        "instructor": {
+          "name": "Daniel Wilson",
+          "expertise": "Buisness Management",
+          "profilePicture": "https://example.com/instructor7.jpg",
+          "summary": "Daniel has over 15 years of experience in cybersecurity, helping companies secure their systems."
+        },
+        "about": "There was something beautiful in his hate. It wasn't the hate itself as it was a disgusting display of racism and intolerance. It was what propelled the hate and the fact that although he had this hate",
+        "coursePicture": "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "listOfModules": [
+          { "name": "Introduction to Cybersecurity", "completed": true },
+          { "name": "Network Security", "completed": true },
+          { "name": "Cryptography Basics", "completed": true },
+          { "name": "Incident Response", "completed": false }
+        ],
+        "listOfReviews": [
+          { "user": "Emily", "comment": "Very informative and detailed.", "rating": 4.7 },
+          { "user": "Jack", "comment": "Perfect for IT professionals.", "rating": 4.5 }
+        ],
+        "discussion": "Discuss cybersecurity trends here.",
+        "resources": ["Cybersecurity Best Practices", "OWASP Top 10"]
+      }
+    ]
+  }
+  
