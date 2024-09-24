@@ -22,7 +22,7 @@
   import SideNav from '@/components/SideNav.vue';
   import CourseDetail from '@/components/CourseDetail.vue';
   import CourseInformation from '@/components/CourseInformation.vue';
-  // import { getCourseById } from '@/services/courses';
+  import { getCourseById } from '@/services/courses';
   import { mapGetters } from 'vuex';
   
   export default {
@@ -49,49 +49,49 @@
       this.currentView = view; 
     }
   },
-  async mounted() {
-  const courseId = this.$route.params.id; // Get the course ID from the route
+//   async mounted() {
+//   const courseId = this.$route.params.id; // Get the course ID from the route
 
-  // Fetch courses if not already loaded
-  if (this.$store.getters.allCourses.length === 0) {
-    await this.$store.dispatch('fetchCourses'); // Fetch courses and store them in Vuex
+//   // Fetch courses if not already loaded
+//   if (this.$store.getters.allCourses.length === 0) {
+//     await this.$store.dispatch('fetchCourses'); // Fetch courses and store them in Vuex
+//   }
+
+//   // Now retrieve the course by ID
+//   const course = this.$store.getters.getCourseById(courseId);
+  
+//   if (!course) {
+//     console.error(`Course with ID ${courseId} not found in store`);
+//     this.$router.push('/'); // Optionally redirect to home if course not found
+//     return;
+//   }
+
+//   console.log("Fetched course:", course);
+// }
+
+    async mounted() {
+    if (this.allCourses.length === 0) {
+      await this.$store.dispatch('fetchCourses');
+    }
+
+  let courseId = this.$route.params.id; 
+
+  if (!courseId) {
+    courseId = this.$store.state.lastViewedCourse || this.allCourses[0]?.id;
   }
 
-  // Now retrieve the course by ID
-  const course = this.$store.getters.getCourseById(courseId);
-  
-  if (!course) {
-    console.error(`Course with ID ${courseId} not found in store`);
-    this.$router.push('/'); // Optionally redirect to home if course not found
+  if (!courseId) {
+    this.$router.push({ name: 'home' });
     return;
   }
 
-  console.log("Fetched course:", course);
-}
-
-  //   async mounted() {
-  //   if (this.allCourses.length === 0) {
-  //     await this.$store.dispatch('fetchCourses');
-  //   }
-
-  // let courseId = this.$route.params.id; 
-
-  // if (!courseId) {
-  //   courseId = this.$store.state.lastViewedCourse || this.allCourses[0]?.id;
-  // }
-
-  // if (!courseId) {
-  //   this.$router.push({ name: 'home' });
-  //   return;
-  // }
-
-  //   try {
-  //     this.course = await getCourseById(courseId);
-  //     console.log(this.course);
-  //   } catch (error) {
-  //     console.error('Error fetching course details:', error);
-  //   }
-  // },
+    try {
+      this.course = await getCourseById(courseId);
+      console.log(this.course);
+    } catch (error) {
+      console.error('Error fetching course details:', error);
+    }
+  },
   }
 
 </script>
