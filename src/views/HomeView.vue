@@ -54,7 +54,7 @@ export default {
       
     },
     setActiveItem(itemName) {
-      this.$refs.sideNav.setActiveItem(itemName); // Call setActiveItem on SideNav
+      this.$refs.sideNav.setActiveItem(itemName); 
     },
 
     updateView(view) {
@@ -81,20 +81,13 @@ export default {
   }
 },
 
-  // mounted() {
-  //   this.$store.dispatch('fetchCourses').then(() => {
-  //   console.log("Courses in store:", this.allCourses); 
-  // });
-   
-  // },
+
   watch: {
     allCourses(newCourses) {
       console.log("Courses updated:", newCourses); 
     },
   },
-  // mounted() {
-  //   this.getAllCourses();
-  // },
+ 
 };
 </script>
 

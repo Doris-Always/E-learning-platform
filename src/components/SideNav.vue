@@ -74,9 +74,9 @@ export default {
   watch: {
     $route(to) {
       if (to.name === 'CourseDetailView') {
-        this.activeItem = 'Dashboard'; // Set active to course detail
+        this.activeItem = 'Dashboard'; 
       } else if (to.name === 'home') {
-        this.activeItem = 'Menu'; // Set active to home
+        this.activeItem = 'Menu'; 
       }
   
 

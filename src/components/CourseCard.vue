@@ -28,10 +28,7 @@
         <div class="text-sm">
        {{ course.instructor.name }} ({{ course.instructor.expertise }})
         </div>
-        <!-- <div class="font-weight-bold mt-2">
-          <span class="red--text line-through">₦{{ course.originalPrice }}</span>
-          <span class="ml-2 green--text">₦{{ course.discountPrice }}</span>
-        </div> -->
+        
       </v-card-text>
     </v-card>
   </template>
@@ -53,16 +50,11 @@
     goToCourse(courseId) {
       this.$emit("navigate", courseId); 
       this.$emit("update-active-item", "Dashboard");
-      this.$router.push({ name: 'CourseDetailView', params: { id: courseId } }); // Navigate to CourseDetailView
+      this.$router.push({ name: 'CourseDetailView', params: { id: courseId } }); 
     },
   },
 };
-    // methods: {
-    //   goToCourse(courseId) {
-    //     this.$emit("navigate", courseId);
-    //   },
-    // },
-  // };
+    
   </script>
    
   

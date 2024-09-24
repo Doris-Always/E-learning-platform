@@ -99,7 +99,7 @@ export default {
   align-items: center;
   justify-content: space-between;
   padding: 20px 0;
-  /* border-bottom: 1px solid #e0e0e0; */
+ 
 }
 .text-expertise {
   font-size: 15px;

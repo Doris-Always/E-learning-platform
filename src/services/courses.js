@@ -21,14 +21,3 @@ export const getCourseById = (id) => {
     }
 };
 
-// export const getCourseById = async (id) => {
-    
-//     const url = `http://localhost:3000/courses/${id}`; 
-//     try {
-//         const response = await axios.get(url); 
-//         return response.data;
-//     } catch (error) {
-//         console.error(`Error fetching course with ID ${id}:`, error); 
-//         throw error; 
-//     }
-// };
