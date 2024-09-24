@@ -9,11 +9,23 @@ this project mimics a typical e-learning paltform with courses are dynamically f
 ```
 npm install
 ```
+Technologies Used
+The following major technologies are used in this project:
+
+Vue.js 3: A progressive JavaScript framework for building user interfaces.
+Vuetify 3: A Vue.js UI library with material design components for building responsive and visually consistent UIs.
+Tailwind CSS: A utility-first CSS framework for designing custom user interfaces without writing much custom CSS.
+json-server: Used to simulate a mock API for development.
 
 ### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
+### Go to your browser to veiw the project
+```
+http://localhost:8080
+```
+
 
 ### Compiles and minifies for production
 ```
